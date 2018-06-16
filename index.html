@@ -6,52 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Andrew's Resume</title>
-    <link rel="stylesheet" href="assets/my.css" <!-- Compiled and minified CSS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script type="text/JavaScript" src="assets/js/passTheBar.js"></script>
+
+    <link rel="stylesheet" href="assets/my.css">
 
 
 </head>
 
-<body>
+<body class="grey lighten-4">
+    <div id="nav">
+        <div class="navbar-fixed">
+            <nav class="teal">
+                <div class="nav-wrapper container">
+                    <a href="#welcome" class="brand-logo
+                            ">&nbsp;Andrew Hase</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse">
+                        <i class="mdi-navigation-menu"></i>
+                    </a>
 
-    <div class="container">
-        <div class="row">
-            <h1>Andrew Hase</h1>
-            <h4>Yes, I am looking for job</h4>
+                </div>
+            </nav>
         </div>
     </div>
+
+
     <nav>
-        <div class="nav-wrapper green">
+        <a name="welcome" class="anchor"></a>
+        <div class="nav-wrapper teal lighten-2">
             <a href="#" class="brand-logo right">
-                <i class="fas fa-bed fa-lg"></i>
+                <i id="sleep" class=""></i>
             </a>
             <!-- Have a smily face when during work hours -->
             <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <li>
-                    <a href="#">Welcome</a>
+                    <a href="#welcome">Welcome</a>
                 </li>
                 <li>
-                    <a href="#">About Me</a>
+                    <a href="#about">About Me</a>
                 </li>
                 <li>
-                    <a href="#">Experince</a>
+                    <a href="#experince">Experince</a>
+                </li>
+                <li>
+                    <a href="#work">Work Experince</a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-
-    <div class="container">
+    <!-- main content -->
+    <div id="push"></div>
+    <section class="teal lighten-2 valign-wrapper">
+        <div class="container valign">
+            <div class="row">
+                <div class="col l12">
+                    <h2 class="center-align white-text">THANKS FOR STOPPING BY</h2>
+                    <p class="center-align flow-text">My name is Andrew Hase and I am a Systems Administrator and all round tinkerer. I work a lot with web
+                        design, web dev, including wordpress plugins and theming, javascript and whatever I need to do to
+                        get it working.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--   <div class="container">
         <div class="row">
             <h1>THANKS FOR STOPPING BY</h1>
-            <h3>My name is Andrew Hase and I am a Systems Administrator and all round tinkerer. I work a lot with web design,
+            <p>My name is Andrew Hase and I am a Systems Administrator and all round tinkerer. I work a lot with web design,
                 web dev, including wordpress plugins and theming, javascript and whatever I need to do to get it working.
-            </h3>
+                <p>
         </div>
-    </div>
+    </div> -->
+
+
+
 
 
     <div class="container">
@@ -61,7 +101,7 @@
                     <div class="card-image">
                         <img src="assets/img/drew.png">
                         <span class="card-title text-black">Me, Myself and I</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light red">
+                        <a class="btn-floating halfway-fab waves-effect waves-light pink">
                             <i style="color:white;" class="fas fa-plus"></i>
                         </a>
                     </div>
@@ -69,30 +109,32 @@
                         <p>In my spare time I fancy myself awesome at photoshop</p>
                     </div>
                     <div class="card-action">
-                        <a href="#">Download CV?</a>
+                        <a class="pink-text" href="#">Download CV?</a>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 
-    <div class="container">
+    <div class="container" id="about" class="section scrollspy">
+        <a name="about" class="anchor"></a>
         <h1>About Me</h1>
         <div class="row">
-            <div class="col s4">
-                <i class="fas fa-server fa-7x"></i>
-                <h3>Systems Administrator</h3>
+            <div class="col l4 m8 s12">
+                <div class="centerIcon">
+                    <i style="color:#4db6ac" class="fas fa-server fa-7x"></i>
+                </div>
+                <h4>Systems Administrator</h4>
                 <p>Currently employed as a Systems Administrator in Brisbane. I work with VMware, Windows Servers, Win Exchange
                     and Linux. </p>
 
             </div>
-            <div class="col s4">
-                <i class="fab fa-js fa-7x"></i>
-                <i class="fab fa-php fa-7x"></i>
-                <i class="fab fa-html5 fa-7x"></i>
-                <i class="fas fa-code-branch fa-7x"></i>
-                <i class="fas fa-user-astronaut fa-7x"></i>
-                <h3>Developer</h3>
+            <div class="col l4 m8 s12">
+                <div class="centerIcon">
+                    <i style="color:#4db6ac" id="devIcons" class=""></i>
+                </div>
+                <h4>Developer</h4>
                 <p>I like enjoy the problem soliving in development. Please feel free to check out my github.(Add link). I enjoy
                     programming and learning a new Languages. Currently I am have experince in:
                     <ul>
@@ -105,10 +147,10 @@
                 </p>
 
             </div>
-            <div class="col s4">
-                <i class="fab fa-ethereum fa-7x"></i>
-                <img style="height: 7em; width: 7em" src="assets/img/raspPi.png">
-                <h3>Hobbies</h3>
+            <div class="col l4 m8 s12">
+                <!-- <i style="color:#4db6ac" class="fab fa-ethereum fa-7x"></i> -->
+                <img id="rasp" style="height: 7em; width: 7em; color:#4db6ac" src="assets/img/raspPi.png">
+                <h4>Hobbies</h4>
                 <p>I am an all round tinkerer. I enjoy to work on silly raspberry pi projects. I also enjoy tinkering with websites
                     and new technologies. When I am not in the IT world, I like to abandon it completly by hiking mountains
                     or going on larger 3 day hikes. I was an avid climber until I broke my knee a few years ago about still
@@ -121,38 +163,52 @@
     </div>
 
 
-    <div class="container">
+    <div class="container" id="experince" class="section scrollspy">
         <h1>Experince</h1>
+        <a name="experince" class="anchor"></a>
         <div class="row">
-            <h3>Developer Experince</h3>
+            <h4>Developer Experince</h4>
             <div class="contianer">
                 <h5>JS</h5>
                 <br>
-                <div class="progress black">
-                    <div class="determinate yellow" style="width: 70%"></div>
+                <div id="outerJS" class="progress yellow">
+                    <div id="fullJS" class="determinate yellow darken-2" style="width: 70%"></div>
                 </div>
-            </div>
-            <br>
-            <h5>HTML</h5>
-            <br>
-            <div class="progress orange">
-                <div class="determinate pink" style="width: 95%"></div>
-            </div>
-            <br>
-            <h5>PHP</h5>
-            <br>
-            <div class="progress purple lighten-3">
-                <div class="determinate purple darken-3" style="width: 30%"></div>
+                <br>
+                <h5>HTML</h5>
+                <br>
+                <div id="outerHTML" class="progress orange lighten-2">
+                    <div id="fullHTML" class="determinate orange darken-3" style="width: 95%"></div>
+                </div>
+                <br>
+                <h5>CSS</h5>
+                <br>
+                <div id="outerCSS" class="progress blue lighten-3">
+                    <div id="fullCSS" class="determinate blue darken-3"></div>
+                </div>
+                <br>
+                <h5>PHP</h5>
+                <br>
+                <div id="outerPHP" class="progress purple lighten-3">
+                    <div id="fullPHP" class="determinate purple darken-3"></div>
+                </div>
+                <br>
+                <h5>test</h5>
+                <br>
+                <div class="progress teal lighten-3">
+                    <div id="fullPHP" class="determinate teal darken-3 " style="width: 95%"></div>
+                </div>
             </div>
         </div>
 
 
-        <div class="row">
+        <div class="row" id="work" class="section scrollspy">
             <h3>Work Experince</h3>
+            <a name="work" class="anchor"></a>
 
             <ul class="collapsible expandable">
                 <li>
-                    <div class="collapsible-header">
+                    <div class="collapsible-header teal lighten-4">
                         <i class="far fa-building"></i>Bornhorst & Ward</div>
                     <div class="collapsible-body">
                         <span>
@@ -169,54 +225,77 @@
                                 <li>Disk Management</li>
                                 <li>Manage Help Desk Staff</li>
                                 <li>Writing Web Apps and Standalone Apps</li>
-                                
+                                <li>Wordpress Dev</li>
+
                             </ul>
-                    
-                            
-                                
+
+
+
                         </span>
                     </div>
                 </li>
                 <li>
-                    <div class="collapsible-header">
+                    <div class="collapsible-header  teal lighten-4">
                         <i class="fas fa-building"></i>Queensland Academy of Creative Industies</div>
                     <div class="collapsible-body">
                         <span>Worked as an IT lacky for the local admin there. Qaci was a Mac school
-                                <ul>
-                                        <li>Mac Support</li>
-                                        <li>WinServers</li>
-                                        <li>Trouble Shooting</li>
-                                        <li>Adobe Premier Pro Work</li>
-                                        <li>Adobe PhotoShop Work</li>
-                                    </ul>
-                            
+                            <ul>
+                                <li>Mac Support</li>
+                                <li>WinServers</li>
+                                <li>Trouble Shooting</li>
+                                <li>Adobe Premier Pro Work</li>
+                                <li>Adobe PhotoShop Work</li>
+                            </ul>
+
                         </span>
                     </div>
                 </li>
                 <li>
-                    <div class="collapsible-header">
+                    <div class="collapsible-header teal lighten-4">
                         <i class="far fa-building"></i>Data#3</div>
                     <div class="collapsible-body">
                         <span>Was part of the roll out team initially before I was quickly promoted to Support. I flew all over
                             Queensland to have tea and scones with Govt workers and teach them about windows 10. 10/10 would
                             do again.
                             <ul>
-                                    <li>Large Scale Office Rollouts</li>
-                                    <li>Managed own team</li>
-                                    <li>Trouble Shooting</li>
-                                    <li>Adobe Premier Pro Work</li>
-                                    <li>Adobe PhotoShop Work</li>
-                                </ul>
-                        
+                                <li>Large Scale Office Rollouts</li>
+                                <li>Managed own team</li>
+                                <li>Trouble Shooting</li>
+                                <li>Adobe Premier Pro Work</li>
+                                <li>Adobe PhotoShop Work</li>
+                            </ul>
+
                         </span>
                     </div>
                 </li>
                 <li>
-                    <div class="collapsible-header">
+                    <div class="collapsible-header teal lighten-4">
                         <i class="fas fa-building"></i>Free Lance Web Dev
                     </div>
                     <div class="collapsible-body">
-                        <span>Lorem ipsum dolor sit amet.</span>
+                        <span>Created websites and manage hosting for a varity of small businesses. I am slowly closing this section
+                            of my life down as working full time means hosting only is the way to get the desired work life
+                            balance
+                            <br>
+                            <b>Some Larger Projects:</b>
+                            <ul>
+                                <li>
+                                    <a class="pink-text text-lighten-1" href="http://ricsbar.com.au/">Rics Bar</a>
+                                </li>
+                                <li>
+                                    <a class="pink-text text-lighten-1" href="http://royalgeorgehotel.com.au/">Royal Geogre</a>
+                                </li>
+                                <li>
+                                    <a class="pink-text text-lighten-1" href="http://lutece.com.au/">Lutece Bistro & Winebar</a>
+                                </li>
+                                <li>
+                                    <a class="pink-text text-lighten-1" href="http://www.brunswickandann.com.au/">Brunswick & Ann</a>
+                                </li>
+                            </ul>
+
+
+
+                        </span>
                     </div>
                 </li>
             </ul>
@@ -224,6 +303,7 @@
         </div>
 
         <div class="row">
+            <a name="education" class="anchor"></a>
             <h3>Education</h3>
             <ul>
                 <li>Bachelor of International Business</li>
@@ -234,49 +314,118 @@
         </div>
 
     </div>
-    <footer class="page-footer">
+    <footer class="page-footer teal lighten-4">
         <div class="container">
             <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
+                <div class="col l8 m8 s12">
+                    <h5 class="white-text">Contact Me</h5>
+                    <a name="contact" class="anchor"></a>
                     <p class="grey-text text-lighten-4">Please Feel Free To Contact Me</p>
+                    <form class="col l6 m6 s6">
+                        <div class="row">
+                            <div class="input-field col l6 s6">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col l6 s6">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col l6 s6">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-field col l6 s6">
+                                <input id="telno" type="tel" class="validate" pattern="^0[0-9]{9}">
+                                <label for="telno">Number</label>
+                                <span class="helper-text" data-error="Enter your number in long form eg: 0733334444" data-success="right"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col l12 s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Textarea</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button class="btn waves-effect pink" type="submit">Submit</button>
+                            <button class="btn waves-effect pink lighten-4" type="reset">Reset</button>
+                        </div>
+
+                    </form>
+
                 </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
+
+
+
+
+                <div class="row col l2">
+                    <h5 class="black-text">Links</h5>
                     <ul>
                         <li>
-                            <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+                            <a class="pink-text text-lighten-1" href="#!">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </li>
                         <li>
-                            <a class="grey-text text-lighten-3" href="#!">Link 2</a>
+                            <a class="pink-text text-lighten-1" href="#!">Link 2</a>
                         </li>
                         <li>
-                            <a class="grey-text text-lighten-3" href="#!">Link 3</a>
+                            <a class="pink-text text-lighten-1" href="#!">Link 3</a>
                         </li>
                         <li>
-                            <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+                            <a class="pink-text text-lighten-1" href="#!">Link 4</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
+
+
+        <div class="footer-copyright teal">
             <div class="container">
                 © 2018 Copyright Andrew
                 <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
         </div>
 
+    </footer>
+    <div class="row">
+        <div class="col hide-on-small-only m3 l2">
+            <ul class="section table-of-contents">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#experince">Experince</a>
+                </li>
+                <li>
+                    <a href="#work">Work Experince</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 
 </body>
+<script type="text/JavaScript" src="assets/js/alternate.js"></script>
+<script type="text/JavaScript" src="assets/js/time.js"></script>
 <script>
 
     var elem = document.querySelector('.collapsible.expandable');
     var instance = M.Collapsible.init(elem, {
         accordion: false
     });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(elems,
+            { scrollOffsett: 100 });
+    });
 
 </script>
+
 
 </html>

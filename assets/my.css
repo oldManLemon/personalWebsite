@@ -3,3 +3,143 @@
     background-color: #ff5722;
     height: 400px;
 }
+
+.centerIcon{
+    text-align:center;
+    /* width:50%; */
+    }
+
+    .header{
+        width:100%;
+        margin: 0% !important; 
+        padding: 0% !important;
+    }
+.progress{
+    height: 10px;
+}
+
+/* Progress Bars */
+@keyframes phpProgress{
+    from {width: 0%;}
+    to {width: 25%;}
+}
+@-webkit-keyframes phpProgress{
+    from {width: 0%;}
+    to {width: 25%;}
+}
+@-moz-keyframes phpProgress{
+    from {width: 0%;}
+    to {width: 25%;}
+}
+@-o-keyframes phpProgress{
+    from {width: 0%;}
+    to {width: 25%;}
+}
+
+#fullPHP.start {
+	width: 0px;
+	-webkit-animation: phpProgress 5s ease-out forwards;
+	   -moz-animation: phpProgress 5s ease-out forwards;
+	    -ms-animation: phpProgress 5s ease-out forwards;
+	     -o-animation: phpProgress 5s ease-out forwards;
+	        animation: phpProgress 5s ease-out forwards;
+}
+
+@keyframes jsProgress{
+    from {width: 0%;}
+    to {width: 70%;}
+}
+@-webkit-keyframes jsProgress{
+    from {width: 0%;}
+    to {width: 70%;}
+}
+@-moz-keyframes jsProgress{
+    from {width: 0%;}
+    to {width: 70%;}
+}
+@-o-keyframes jsProgress{
+    from {width: 0%;}
+    to {width: 70%;}
+}
+
+#fullJS.start {
+	width: 0px;
+	-webkit-animation: jsProgress 5s ease-out forwards;
+	   -moz-animation: jsProgress 5s ease-out forwards;
+	    -ms-animation: jsProgress 5s ease-out forwards;
+	     -o-animation: jsProgress 5s ease-out forwards;
+	        animation: jsProgress 5s ease-out forwards;
+}
+@keyframes html{
+    from {width: 0%;}
+    to {width: 95%;}
+}
+@-webkit-keyframes html{
+    from {width: 0%;}
+    to {width: 95%;}
+}
+@-moz-keyframes html{
+    from {width: 0%;}
+    to {width: 95%;}
+}
+@-o-keyframes html{
+    from {width: 0%;}
+    to {width: 95%;}
+}
+
+#fullHTML.start {
+	width: 0px;
+	-webkit-animation: html 5s ease-out forwards;
+	   -moz-animation: html 5s ease-out forwards;
+	    -ms-animation: html 5s ease-out forwards;
+	     -o-animation: html 5s ease-out forwards;
+	        animation: html 5s ease-out forwards;
+}
+
+@keyframes css{
+    from {width: 0%;}
+    to {width: 62%;}
+}
+@-webkit-keyframes css{
+    from {width: 0%;}
+    to {width: 62%;}
+}
+@-moz-keyframes css{
+    from {width: 0%;}
+    to {width: 62%;}
+}
+@-o-keyframes css{
+    from {width: 0%;}
+    to {width: 62%;}
+}
+
+
+#fullCSS.start {
+	width: 0px;
+	-webkit-animation: css 5s ease-out forwards;
+	   -moz-animation: css 5s ease-out forwards;
+	    -ms-animation: css 5s ease-out forwards;
+	     -o-animation: css 5s ease-out forwards;
+	        animation: css 5s ease-out forwards;
+}
+
+
+/* Take Care of form validation */
+
+.input-field input[type=tel].invalid {
+    border-bottom: 1px solid #F44336;
+    box-shadow: 0 1px 0 0 #F44336;
+  }
+  .input-field{
+      color: #212121; 
+  }
+  .input-field > label{
+    color: #424242;  
+  }
+
+.anchor{
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+  }
