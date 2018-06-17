@@ -69,53 +69,41 @@
     </nav>
     <!-- main content -->
     <div id="push"></div>
-    <section class="teal lighten-2 valign-wrapper">
+    <section class="valign-wrapper">
         <div class="container valign">
             <div class="row">
-                <div class="col l12">
-                    <h2 class="center-align white-text">THANKS FOR STOPPING BY</h2>
+                <div class="col l6">
+                    <h2 id="welcomeMessage" class="pink-text text-darken-3"></h2>
+                    <h3 class="center-align grey-text text-darken-4">THANKS FOR STOPPING BY</h3>
                     <p class="center-align flow-text">My name is Andrew Hase and I am a Systems Administrator and all round tinkerer. I work a lot with web
                         design, web dev, including wordpress plugins and theming, javascript and whatever I need to do to
                         get it working.</p>
                 </div>
+                <div class="col s12 m6 l6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/img/drew.png">
+                                <span class="card-title pink-text text-lighten-4 z-depth-5"><b>Me, Myself and I</b></span>
+                                <a class="btn-floating halfway-fab waves-effect waves-light pink">
+                                    <i style="color:white;" class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <p>In my spare time I fancy myself awesome at photoshop</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="pink-text" href="#">Download CV?</a>
+                            </div>
+                        </div>
+                    </div>
             </div>
+           
         </div>
     </section>
-    <!--   <div class="container">
-        <div class="row">
-            <h1>THANKS FOR STOPPING BY</h1>
-            <p>My name is Andrew Hase and I am a Systems Administrator and all round tinkerer. I work a lot with web design,
-                web dev, including wordpress plugins and theming, javascript and whatever I need to do to get it working.
-                <p>
-        </div>
-    </div> -->
 
 
 
 
-
-    <div class="container">
-        <div class="row">
-            <div class="col s12 m7">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/img/drew.png">
-                        <span class="card-title text-black">Me, Myself and I</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light pink">
-                            <i style="color:white;" class="fas fa-plus"></i>
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <p>In my spare time I fancy myself awesome at photoshop</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="pink-text" href="#">Download CV?</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
 
     <div class="container" id="about" class="section scrollspy">
         <a name="about" class="anchor"></a>
@@ -189,15 +177,10 @@
                 <br>
                 <h5>PHP</h5>
                 <br>
-                <div id="outerPHP" class="progress purple lighten-3">
+                <div onmouseover="phpHoverOuter" id="outerPHP" class="progress purple lighten-3">
                     <div id="fullPHP" class="determinate purple darken-3"></div>
                 </div>
-                <br>
-                <h5>test</h5>
-                <br>
-                <div class="progress teal lighten-3">
-                    <div id="fullPHP" class="determinate teal darken-3 " style="width: 95%"></div>
-                </div>
+
             </div>
         </div>
 
@@ -216,18 +199,42 @@
                             a Windows enviroment. While working for BW I took over the sole Linux Server and creeated a bunch
                             more to serve as FileServers, WebHosts and more. A lot of experince with VMWare, Ubuntu, SusE
                             and Mint. I performed all aspects of Sysadmin.
-                            <ul>
-                                <li>VMware</li>
-                                <li>WinServers</li>
-                                <li>WinCoreServer</li>
-                                <li>Linux</li>
-                                <li>Exchange</li>
-                                <li>Disk Management</li>
-                                <li>Manage Help Desk Staff</li>
-                                <li>Writing Web Apps and Standalone Apps</li>
-                                <li>Wordpress Dev</li>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li>VMware</li>
+                                            <li>WinServers</li>
+                                            <li>WinCoreServer</li>
+                                            <li>Linux</li>
+                                            <li>Exchange</li>
+                                            <li>Disk Management</li>
+                                            <li>Manage Help Desk Staff</li>
+                                            <li>Writing Web Apps and Standalone Apps</li>
+                                            <li>Wordpress Dev</li>
 
-                            </ul>
+                                        </ul>
+                                    </td>
+
+                                    <td>
+                                        <ul>
+                                            <li>Adding new features to asp and aspx software</li>
+                                            <li>Front end changes to programs</li>
+                                            <li>Intergrating Linux in Windows AD enviroment</li>
+                                            <li>MYSQL/MSSQL database maintance</li>
+                                            <li>Automate Window Management .bat .ps1</li>
+                                            <li>Linux and Windows File Server Management</li>
+                                            <li>Intergrating old .Net Web Apps into Wordpress</li>
+                                            <li>Adding lots of little javascript into the mix</li>
+                                            <li>Bug Hunting</li>
+                                            <li>Inventory Management</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+
 
 
 
@@ -238,14 +245,28 @@
                     <div class="collapsible-header  teal lighten-4">
                         <i class="fas fa-building"></i>Queensland Academy of Creative Industies</div>
                     <div class="collapsible-body">
-                        <span>Worked as an IT lacky for the local admin there. Qaci was a Mac school
-                            <ul>
-                                <li>Mac Support</li>
-                                <li>WinServers</li>
-                                <li>Trouble Shooting</li>
-                                <li>Adobe Premier Pro Work</li>
-                                <li>Adobe PhotoShop Work</li>
-                            </ul>
+                        <span>First opportunity to work with Mac's as Qaci is a Mac school. Worked in the help desk for the local
+                            Sysadmin.
+
+                            <table>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li>Mac Laptop/Desktop(The bin)/Server Support</li>
+                                            <li>Window Servers</li>
+                                            <li>Orange Card for EDQ</li>
+                                            <li>Projectors, Apple TV, other miscellaneous thech items for troubleshooting</li>
+                                            <li>Ran support for IB progfessional development conference</li>
+                                            <li>Minor programming operations</li>
+                                            <li>Inventory Management</li>
+                                            <li>Scripting and Package Creation (.dmg & .pkg)</li>
+                                            <li>Marketing; Video, media editing and creation</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+
+
 
                         </span>
                     </div>
@@ -275,7 +296,7 @@
                     <div class="collapsible-body">
                         <span>Created websites and manage hosting for a varity of small businesses. I am slowly closing this section
                             of my life down as working full time means hosting only is the way to get the desired work life
-                            balance
+                            balance.
                             <br>
                             <b>Some Larger Projects:</b>
                             <ul>
@@ -304,12 +325,25 @@
 
         <div class="row">
             <a name="education" class="anchor"></a>
-            <h3>Education</h3>
+            <h3> Formal Education</h3>
             <ul>
                 <li>Bachelor of International Business</li>
                 <li>Languages - German Mandarin</li>
-
-
+            </ul>
+            <h5> Informal Education</h5>
+            <ul>
+                <li>CS50 - EDX</li>
+                <li>Code Academy</li>
+                <li>Youtube?</li>
+                <li>Stackoverflow :)</li>
+            </ul>
+            <h5>Skills in Programms</h5>
+            <ul>
+                <li>Gimp, Photoshop, inDesign, MSoffice, Libreoffice etc</li>
+                <li>VsCode, VsStudio, PhpStorm, AutoCad, Inventor, Revit</li>
+                <li>Can learn new systems and programs quickly</li>
+                <li><b>CMS Experince:</b> Wordpress, Joomla, Drupal, Virtumart, WooCommerce, Discourse, OwnCloud, NextCloud</li>
+                <li><b>Linux:</b> Ubuntu, SuSe, Mint, Debain, Noobs, Rasbian </li>
             </ul>
         </div>
 
@@ -318,9 +352,9 @@
         <div class="container">
             <div class="row">
                 <div class="col l8 m8 s12">
-                    <h5 class="white-text">Contact Me</h5>
+                    <h5 class="grey-text text-darken-3">Contact Me</h5>
                     <a name="contact" class="anchor"></a>
-                    <p class="grey-text text-lighten-4">Please Feel Free To Contact Me</p>
+                    <p class="grey-text text-darken-3">Please Feel Free To Contact Me</p>
                     <form class="col l6 m6 s6">
                         <div class="row">
                             <div class="input-field col l6 s6">
@@ -352,7 +386,7 @@
                         </div>
                         <div class="row">
                             <button class="btn waves-effect pink" type="submit">Submit</button>
-                            <button class="btn waves-effect pink lighten-4" type="reset">Reset</button>
+                            <button class="btn waves-effect pink lighten-2" type="reset">Reset</button>
                         </div>
 
                     </form>
@@ -363,15 +397,17 @@
 
 
                 <div class="row col l2">
-                    <h5 class="black-text">Links</h5>
+                    <h5 class="grey-text text-darken-3">Links</h5>
                     <ul>
                         <li>
-                            <a class="pink-text text-lighten-1" href="#!">
+                            <a target="_blank"  class="pink-text text-lighten-1" href="https://github.com/oldManLemon">
                                 <i class="fab fa-github"></i>
                             </a>
                         </li>
                         <li>
-                            <a class="pink-text text-lighten-1" href="#!">Link 2</a>
+                            <a target="_blank" class="pink-text text-lighten-1" href="https://www.linkedin.com/in/andrew-hase-047834b2/">
+                                    <i class="fab fa-linkedin"></i>
+                            </a>
                         </li>
                         <li>
                             <a class="pink-text text-lighten-1" href="#!">Link 3</a>
@@ -388,12 +424,12 @@
         <div class="footer-copyright teal">
             <div class="container">
                 © 2018 Copyright Andrew
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                <a class="grey-text text-lighten-4 right" href="http://www.devilsdetailsdesigns.com.au/resume/">Just for fun, my old resume site!</a>
             </div>
         </div>
 
     </footer>
-    <div class="row">
+    <!-- <div class="row">
         <div class="col hide-on-small-only m3 l2">
             <ul class="section table-of-contents">
                 <li>
@@ -407,7 +443,7 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
 
 
 </body>

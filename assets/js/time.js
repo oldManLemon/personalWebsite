@@ -1,5 +1,6 @@
-var currentTime = new Date().getHours();
-//var currentTime = 10;
+//var currentTime = new Date().getHours();
+var currentTime = 17;
+var welcomeMsg= document.getElementById('welcomeMessage');
 var sleepIcon = document.getElementById('sleep');
 window.onload = sleep(currentTime);
 
@@ -11,21 +12,25 @@ function sleep(time) {
         //Good Morning
         if (time >= 9 && time < 12) {
             console.log("Good Morning!");
+            welcomeMsg.innerHTML = "Good Morning!";
+
         }
         else {
             console.log("Good Afternoon!");
+            welcomeMsg.innerHTML = "Good Afternoon!";
         }
 
     }
-    else {
+    else 
+    {
         sleepIcon.classList.value = "fas fa-bed fa-lg";
         if(time >= 16 && time < 21){
-            console.info("Good evening, I am probably at home, but can be contacted on my mobile which is provided on my resume");
+            console.log("Good evening, I am probably at home, but can be contacted on my mobile which is provided on my resume");
         }
-        else if(time > 21 && time <= 23){
+        else if(time >= 21 && time < 23){
             console.log("Please use the contact form and I will get back to ASAP :)");
         }
-        else if(time == 24  && time < 4){
+        else if(time >= 23 ||time < 4){
             console.log("What are you doing up? It's really late!");
             console.log("Please use the contact form and I will get back to ASAP :)");
         }else{
