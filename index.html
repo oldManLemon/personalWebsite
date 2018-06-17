@@ -355,33 +355,33 @@
                     <h5 class="grey-text text-darken-3">Contact Me</h5>
                     <a name="contact" class="anchor"></a>
                     <p class="grey-text text-darken-3">Please Feel Free To Contact Me</p>
-                    <form class="col l6 m6 s6">
+                    <form class="col l6 m6 s6" method="POST" action="form.php" enctype="multipart/form-data">
                         <div class="row">
                             <div class="input-field col l6 s6">
-                                <input id="first_name" type="text" class="validate">
-                                <label for="first_name">First Name</label>
+                                <input name='firstName' id="firstName" type="text" class="validate" required>
+                                <label for="firstName">First Name</label>
                             </div>
                             <div class="input-field col l6 s6">
-                                <input id="last_name" type="text" class="validate">
-                                <label for="last_name">Last Name</label>
+                                <input name="lastName" id="lastName" type="text" class="validate">
+                                <label for="lastName">Last Name</label>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="input-field col l6 s6">
-                                <input id="email" type="email" class="validate">
-                                <label for="email">Email</label>
+                                <input name="emailForm" id="emailForm" type="email" class="validate" required>
+                                <label for="emailForm">Email</label>
                             </div>
                             <div class="input-field col l6 s6">
-                                <input id="telno" type="tel" class="validate" pattern="^0[0-9]{9}">
+                                <input name="telno" id="telno" type="tel" class="validate" pattern="^0[0-9]{9}">
                                 <label for="telno">Number</label>
                                 <span class="helper-text" data-error="Enter your number in long form eg: 0733334444" data-success="right"></span>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col l12 s12">
-                                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                <label for="textarea1">Textarea</label>
+                                <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                                <label for="message">Please Write your message here</label>
                             </div>
                         </div>
                         <div class="row">
@@ -401,20 +401,15 @@
                     <ul>
                         <li>
                             <a target="_blank"  class="pink-text text-lighten-1" href="https://github.com/oldManLemon">
-                                <i class="fab fa-github"></i>
+                                <i class="fab fa-github fa-2x"></i>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" class="pink-text text-lighten-1" href="https://www.linkedin.com/in/andrew-hase-047834b2/">
-                                    <i class="fab fa-linkedin"></i>
+                                    <i class="fab fa-linkedin fa-2x"></i>
                             </a>
                         </li>
-                        <li>
-                            <a class="pink-text text-lighten-1" href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a class="pink-text text-lighten-1" href="#!">Link 4</a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
