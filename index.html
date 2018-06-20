@@ -15,7 +15,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script type="text/JavaScript" src="assets/js/passTheBar.js"></script>
-    
+
 
     <link rel="stylesheet" href="assets/my.css">
 
@@ -27,6 +27,7 @@
         <div class="navbar-fixed">
             <nav class="teal">
                 <div class="nav-wrapper container">
+
                     <a href="#welcome" class="brand-logo
                             ">&nbsp;Andrew Hase</a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse">
@@ -45,6 +46,9 @@
             <a href="#" class="brand-logo right">
                 <i id="sleep" class=""></i>
             </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
             <!-- Have a smily face when during work hours -->
             <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <li>
@@ -54,10 +58,10 @@
                     <a href="#about">About Me</a>
                 </li>
                 <li>
-                    <a href="#experince">Experince</a>
+                    <a href="#experince">Experience</a>
                 </li>
                 <li>
-                    <a href="#work">Work Experince</a>
+                    <a href="#work">Work Experience</a>
                 </li>
                 <li>
                     <a href="#education">Education</a>
@@ -68,6 +72,26 @@
             </ul>
         </div>
     </nav>
+    <ul id="mobile-demo" class="sidenav">
+        <li>
+            <a href="#welcome">Welcome</a>
+        </li>
+        <li>
+            <a href="#about">About Me</a>
+        </li>
+        <li>
+            <a href="#experince">Experience</a>
+        </li>
+        <li>
+            <a href="#work">Work Experience</a>
+        </li>
+        <li>
+            <a href="#education">Education</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
     <!-- main content -->
     <div id="push"></div>
     <section class="valign-wrapper">
@@ -76,9 +100,17 @@
                 <div class="col l6">
                     <h2 id="welcomeMessage" class="pink-text text-darken-3"></h2>
                     <h4 class="grey-text text-darken-4">Thanks for stopping by</h4>
-                    <p class="">My name is Andrew Hase and I am a Systems Administrator and all round tinkerer. I work a lot with web
-                        design, web dev, including wordpress plugins and theming, javascript and whatever I need to do to
-                        get it working.
+                    <p class="">My name is Andrew Hase and I am a Systems Administrator and all-round tinkerer. I work predominately
+                        with web design, web development, including WordPress plugins and theming, JavaScript and whatever
+                        I need to do to get my current project working.</p>
+                    <p> I currently work heavily with enterprise hardware for data storage and virtualization. I really enjoy
+                        getting new projects off the ground especially ones that involve large amounts of end user interaction
+                        to help the system grow. For example, in my current job I have redone our intranet page to get users
+                        to engage with the articles and processes and produce their own articles for future users. I have
+                        done this by integrating a number of plugins, custom written plugins and child themes and the integration
+                        of discourse. My name is Andrew Hase and I am a Systems Administrator and all round tinkerer. I work
+                        a lot with web design, web dev, including wordpress plugins and theming, javascript and whatever
+                        I need to do to get it working.
                     </p>
                 </div>
                 <div class="col s12 m6 l6">
@@ -117,36 +149,41 @@
                 <div class="centerIcon">
                     <i style="color:#4db6ac" class="fas fa-server fa-7x"></i>
                 </div>
-                <h4>Systems Administrator</h4>
+                <h4>Computer Lover</h4>
                 <p>Currently employed as a Systems Administrator in Brisbane. I work with VMware, Windows Servers, Win Exchange
-                    and Linux. </p>
-
+                    and Linux. I also am the proud owner of a number ardunio's, raspberryPi's, bread boards, wires and a
+                    large array of LED lights. I really like making LED lights flash. </p>
             </div>
             <div class="col l4 m8 s12">
                 <div class="centerIcon">
                     <i style="color:#4db6ac" id="devIcons" class=""></i>
                 </div>
                 <h4>Developer</h4>
-                <p>I like enjoy the problem soliving in development. Please feel free to check out my github.(Add link). I enjoy
-                    programming and learning a new Languages. Currently I am have experince in:
+                <p>I enjoy the problem solving in development. Please feel free to check out my github. I get a lot out of programming
+                    and learning a new Languages. Currently I have experience in:
                     <ul>
                         <li>JavaScript</li>
                         <li>Php</li>
                         <li>C#</li>
                         <li>.Net</li>
                     </ul>
-                    I have dabbled breifly in many more.
+                    I have dabbled briefly in many more.
                 </p>
 
             </div>
             <div class="col l4 m8 s12">
                 <!-- <i style="color:#4db6ac" class="fab fa-ethereum fa-7x"></i> -->
-                <img id="rasp" style="height: 7em; width: 7em; color:#4db6ac" src="assets/img/raspPi.png">
+                <div class="centerIcon">
+                    <img id="rasp" style="height: 7em; width: 7em; color:#4db6ac" src="assets/img/raspPi.png">
+                </div>
                 <h4>Hobbies</h4>
-                <p>I am an all round tinkerer. I enjoy to work on silly raspberry pi projects. I also enjoy tinkering with websites
-                    and new technologies. When I am not in the IT world, I like to abandon it completly by hiking mountains
+                <p>I am an all round tinkerer. I enjoy working on silly raspberry pi projects. I also enjoy tinkering with websites
+                    and new technologies. When I am not in the IT world, I like to abandon it completely by hiking mountains
                     or going on larger 3 day hikes. I was an avid climber until I broke my knee a few years ago about still
-                    enjoy it from time to time.
+                    enjoy it from time to time.I am an all round tinkerer. I enjoy to work on silly raspberry pi projects.
+                    I also enjoy tinkering with websites and new technologies. When I am not in the IT world, I like to abandon
+                    it completly by hiking mountains or going on larger 3 day hikes. I was an avid climber until I broke
+                    my knee a few years ago about still enjoy it from time to time.
                 </p>
 
             </div>
@@ -156,10 +193,10 @@
 
 
     <div class="container" id="experince" class="section scrollspy">
-        <h1>Experince</h1>
+        <h1>Experience</h1>
         <a name="experince" class="anchor"></a>
         <div class="row">
-            <h4>Developer Experince</h4>
+            <h4>Developer Experience</h4>
             <div class="contianer">
                 <h5>JS</h5>
                 <br>
@@ -343,7 +380,7 @@
                     <ul>
                         <li>CS50 - EDX</li>
                         <li>Code Academy</li>
-                        
+
                     </ul>
             </div>
             <span class="col s12 center-align">
@@ -356,12 +393,13 @@
             <div class="col s12 m12 l12">
                 <h4>Skills in Programms</h4>
                 <ul>
-                    <li><b>Suites:</b> Gimp, Photoshop, inDesign, MSoffice, Libreoffice etc</li>
+                    <li>
+                        <b>Suites:</b> Gimp, Photoshop, inDesign, MSoffice, Libreoffice etc</li>
                     <li>VsCode, VsStudio, PhpStorm, AutoCad, Inventor, Revit</li>
-                   
+
                     <li>
                         <b>CMS Experince:</b> Wordpress, Joomla, Drupal, Virtumart,</li>
-                         <li>WooCommerce, Discourse, OwnCloud, NextCloud</li>
+                    <li>WooCommerce, Discourse, OwnCloud, NextCloud</li>
                     <li>
                         <b>Linux:</b> Ubuntu, SuSe, Mint, Debain, Noobs, Rasbian </li>
                 </ul>
@@ -476,6 +514,10 @@
         var elems = document.querySelectorAll('.scrollspy');
         var instances = M.ScrollSpy.init(elems,
             { scrollOffsett: 100 });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
     });
 
 </script>
