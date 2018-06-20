@@ -1,5 +1,5 @@
 //var currentTime = new Date().getHours();
-var currentTime = 17;
+var currentTime = 16;
 var welcomeMsg= document.getElementById('welcomeMessage');
 var sleepIcon = document.getElementById('sleep');
 window.onload = sleep(currentTime);
